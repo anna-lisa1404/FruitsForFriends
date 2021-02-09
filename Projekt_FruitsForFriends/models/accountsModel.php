@@ -1,9 +1,10 @@
 <?php
 
-namespace fff\model;
-use fff\core\Model as Model;
+// TODO: add namespace again
+// namespace fff\model;
+// use fff\core\Model as Model;
 
-class Accounts extends fff\core\Model
+class Accounts extends Model
 {
     const TABLENAME = 'accounts';
 
@@ -14,7 +15,7 @@ class Accounts extends fff\core\Model
         'email'     => [ 'type' => Model::TYPE_STRING ],
         'firstname' => [ 'type' => Model::TYPE_STRING ],
         'lastname'  => [ 'type' => Model::TYPE_STRING ],
-        'gender'    => [ 'type' => Model::TYPE_ ],
-        'birthdate' => [ 'type' => Model::TYPE_ ],
+        'gender'    => [ 'type' => Model::TYPE_ENUM ],
+        'birthdate' => [ 'type' => Model::TYPE_DATE ],
     ];
 }
