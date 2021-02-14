@@ -6,7 +6,8 @@ body {
     /* text-align: center; */
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    background-color: rgb(255, 219, 92, 0.4);
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 219, 92, 0.4); */
 }
 
 .page-container {
