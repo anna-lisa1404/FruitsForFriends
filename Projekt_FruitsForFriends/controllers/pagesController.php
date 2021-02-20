@@ -12,43 +12,58 @@ class PagesController extends Controller
 
     public function actionStartpage()
 	{
-		$this->params['title'] = 'Welcome to Fruits For Friends!';
+
 	}
 
     public function actionProducts()
     {
-        $this->params['title'] = 'Our Products!';
+
     }
 
     public function actionSmoothiemaker()
     {
-        $this->params['title'] = 'Mix your own Smoothie!';
+ 
     }
 
     public function actionBlog()
     {
-        $this->params['title'] = 'News about our page!';
+ 
     }
 
     public function actionAboutus()
     {
-        $this->params['title'] = 'Get to know us!';
+
     }
 
     public function actionPictures()
     {
-        $this->params['title'] = 'Some impressions of our work!';
+
     }
 
     public function actionCart()
     {
-        $this->params['title'] = 'Your Shopping-Cart!';
+
     }
 
-    // TODO: implement the actual functions for login/registration
+	public function actionAccountpage()
+	{
+
+	}
+
+    // TODO: validate Password
+	// TODO: redirect to account page
+	// TODO: set up all the session stuff
+	// TODO: error message
+	// Notice: Undefined variable: username in C:\Webprogrammierung\Projekt_FruitsForFriends\controllers\pagesController.php on line 88
 
 	public function actionLogin()
 	{
+		// if user is already logged in, open personal account page instead of login
+		if(isset($_SESSION['username']))
+		{
+			header('Location: ?c=pages&a=accountpage');
+		}
+
 		// store error message
 		$errMsg = null;
 
@@ -57,27 +72,30 @@ class PagesController extends Controller
 		$password = isset($_POST['password']) ? $_POST['password'] : '';
 
 		// check user send login field
-		if(isset($_POST['submit']))
+		if(isset($_POST['submit_login']))
 		{
-
 			// TODO: Validate input first
 			// TODO: Check login values with database accounts
 			// TODO: Store useful variables into the session like account and also set loggedIn = true
 			$db = $GLOBALS['db'];
 			
             // TODO: add namespace
-			$login = accountsModel::findOne('username = '.$db->quote($username));
+			$account = accounts::findOne('username = '.$db->quote($username).' AND '.'password = '.$db->quote($password));
 
-			if($login !== null /*&& password_verify($password, $login->passwordHash)*/)
+			if($account !== null)
 			{
-				echo "login success";
+				// if login was successful, open personal account page
+				// user stays logged in until they log out
+				$_SESSION['username'] = $username;
+				header('Location: ?c=pages&a=accountpage');
 			}
 			else
 			{
 				$errMsg = 'Nutzer oder Passwort nicht korrekt.';
+				echo $errMsg;
 			}
 
-			// if there is no error reset mail
+			// if there is no error reset username
 			if($errMsg === null)
 			{
 				$username = '';
@@ -88,12 +106,19 @@ class PagesController extends Controller
 		// set param email to prefill login input field
 		$this->setParam('username', $username);
 		$this->setParam('errMsg', $errMsg);
-		$this->setParam('test', 'Hello World!');
+	/*	$this->setParam('test', 'Hello World!'); */
 	}
 
     public function actionRegistration()
     {
-        $this->params['title'] = 'Sign up to Fruits For Friends!';
+
     }
+
+	public function actionLogout()
+	{
+		unset($_SESSION['username']);
+		session_destroy();
+		header('Location: index.php?c=pages&a=login');
+	}
 }
 

@@ -22,7 +22,7 @@
 
                 <div class="form-submit">
                     <br>
-                    <input name="submit" type="submit" value="einloggen">
+                    <input name="submit_login" type="submit" value="einloggen">
                 </div>
                 <div class="form-link">
                     <br>

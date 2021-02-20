@@ -1,5 +1,6 @@
 <?php
-require_once 'config/init.php';
+session_start();
+$_SESSION['account'] = null;
 
 // load needed variables/defines/configs
 require_once 'config/init.php';
@@ -10,8 +11,8 @@ require_once COREPATH.'functions.php';
 require_once COREPATH.'controller.class.php';
 require_once COREPATH.'model.class.php';
 
-// TODO: load all the models
-
+// load the models
+require_once MODELSPATH.'accountsModel.php';
 
 $controllerName = 'pages'; // default controller if noting is set
 $actionName = 'startpage'; // default action if nothing is set

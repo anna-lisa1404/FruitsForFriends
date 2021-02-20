@@ -6,7 +6,7 @@
 abstract class Model
 {
     const TYPE_STRING   = 'string';
-    const TYPE_INTEGER  = 'int';
+    const TYPE_INT  = 'int';
     const TYPE_DATE = 'date';
     const TYPE_ENUM = 'enum';
 
@@ -62,7 +62,7 @@ abstract class Model
         }
     }
 
-    public static function find($whereStr = '1')
+    public static function find($whereStr = '')
     {
         $db = $GLOBALS['db'];
         $sqlStr = 'SELECT * FROM `'.self::tablename().'` WHERE '.$whereStr.';';
@@ -86,7 +86,7 @@ abstract class Model
     }
 
 
-    public static function findOne($whereStr = '1')
+    public static function findOne($whereStr = '')
     {
         $results = self::find($whereStr);
 

@@ -17,5 +17,6 @@ class Accounts extends Model
         'lastname'  => [ 'type' => Model::TYPE_STRING ],
         'gender'    => [ 'type' => Model::TYPE_ENUM ],
         'birthdate' => [ 'type' => Model::TYPE_DATE ],
+        'address'   => [ 'type' => Model::TYPE_INT ],
     ];
 }
