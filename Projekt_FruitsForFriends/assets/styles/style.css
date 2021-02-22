@@ -1,19 +1,27 @@
-body {
-    height: 100%;
-    width: 100%;
+* {
     margin: 0;
     padding: 0;
-    /* text-align: center; */
+}
+
+html,
+body {
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    /* background-color: rgb(255, 255, 255); */
+}
+
+p,
+h1 {
+    padding-bottom: 10px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
     background-color: rgb(255, 219, 92, 0.4);
 }
 
-.page-container {
-    position: relative;
-    min-height: 100vh;
-}
+.page-container {}
 
 
 /* css of header */
@@ -75,7 +83,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    line-height: 1.5em;
     background-color: white;
 }
 
@@ -97,10 +105,12 @@ footer {
 
 .form-area h1 {
     color: rgb(162, 197, 35);
+    margin-bottom: 2%;
 }
 
 .form-field input {
     width: 100%;
+    margin-top: 1%;
 }
 
 .form-submit input[type="submit"] {
@@ -123,18 +133,59 @@ footer {
     color: rgb(162, 197, 35);
 }
 
-.background-picture img {
+.background-picture-login,
+.background-picture-registration {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-picture-login {
+    background-image: url(../images/lots_of_fruits/victor-figueroa-huUI0y0ERMM-unsplash.jpg);
+}
+
+.error-message {
+    padding: 5px;
+    color: #da3e33;
 }
 
 
 /* css of accountpage */
 
+.account-info,
+.orders-info,
+.logout-button {
+    float: left;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.account-info,
+.orders-info {
+    padding: 20px;
+    background-color: white;
+    border: grey solid;
+    border-radius: 5px;
+}
+
+.account-info h3 {
+    font-size: 30px;
+}
+
+.account-info p {
+    font-size: 20px;
+}
+
 .account-info img {
-    height: 100px;
+    float: right;
+    left: 10%;
+    width: 50%;
+    align-self: center;
+    border: grey solid;
 }
 
 
@@ -198,6 +249,10 @@ footer {
 
 .form-group .submit-btn:hover {
     background: #da3e33;
+}
+
+.background-picture-registration {
+    background-image: url(../images/lots_of_fruits/-background-with-raspberries-berries-background-ripe-raspberries.jpg);
 }
 
 @media screen and (max-width:600px) {

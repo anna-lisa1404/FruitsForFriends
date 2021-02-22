@@ -78,43 +78,16 @@ else
     <title>Fruits for Friends</title>
 </head>
 <body>
-    <?php 
-        include (PAGESPATH.'header.php');
-        $controller->render();
-        include (PAGESPATH.'footer.php');
-    
-    /*  include (PAGESPATH.'header.php');
-            switch ($page) {
-                case "products":
-                    include (PAGESPATH.'products.php');
-                break;
-                case "smoothiemaker":
-                    include (PAGESPATH.'smoothiemaker.php');
-                break;
-                case "blog":
-                    include (PAGESPATH.'blog.php');
-                break;
-                case "aboutus":
-                    include (PAGESPATH.'aboutus.php');
-                break;
-                case "pictures":
-                    include (PAGESPATH.'pictures.php');
-                break;
-                case "login":
-                    include (PAGESPATH.'login.php');
-                break;
-                case "registration":
-                    include (PAGESPATH.'registration.php');
-                break;
-                case "cart":
-                    include (PAGESPATH.'cart.php');
-                break;
-                default:
-                    include (PAGESPATH.'startpage.php');
-            }
-            include (PAGESPATH.'footer.php');
-            */
+    <div class="wrapper">
+        <div class="page-container">
+            <?php 
+                include (PAGESPATH.'header.php');
+                $controller->render();
             ?>
-
+        </div>
+        <?php
+            include (PAGESPATH.'footer.php');
+        ?>
+    </div>
 </body>    
 </html>

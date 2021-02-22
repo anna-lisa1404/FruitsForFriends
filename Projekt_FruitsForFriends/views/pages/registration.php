@@ -1,10 +1,5 @@
 
-<div  class="page-container" >
-        
-    <div class="background-picture">
-        <img src=<?= IMAGEPATH.'lots_of_fruits/-background-with-raspberries-berries-background-ripe-raspberries.jpg' ?> alt="a lot of himbeer"> 
-    </div>
-
+<div class="background-picture-registration">
     <div  class="wrapper-registrierung">
         <div class="contact-form">
              <h1 class="text-center"> Registrierung  </h1>
@@ -79,6 +74,4 @@
                 </form>                 
         </div>
     </div> 
-    
-            
 </div>

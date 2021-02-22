@@ -1,4 +1,4 @@
-<div class="page-container">
+
 <h1 align="center">Unsere Unternehmensphilosophie</h1>
  <a href=""></a>
  <td valign="top">
@@ -26,4 +26,3 @@
         </tr>
     </table>
     </div>
-</div>

@@ -1,8 +1,5 @@
-<div class="page-container">
-    <div class="background-picture">
-       <img src=<?= IMAGEPATH.'lots_of_fruits/victor-figueroa-huUI0y0ERMM-unsplash.jpg' ?> alt="a lot of limes"> 
-    </div>
 
+<div class="background-picture-login">
     <div class="login-wrapper">
         <div class="form-area">
             <h1>Willkommen zurück!</h1>
@@ -19,6 +16,12 @@
                     <label for="password">Passwort:</label><br>
                     <input id="password" name="password" type="password" placeholder="dein Passwort" required>
                 </div>
+
+                <? if(isset($errMsg)) : ?>
+                    <div class="error-message">
+                        <?=$errMsg?>
+                    </div>
+                <? endif; ?>
 
                 <div class="form-submit">
                     <br>

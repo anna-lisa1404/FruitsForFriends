@@ -1,4 +1,4 @@
-<div class="container">
+
     <h1>Blog</h1>
     
         <div class="column" action="index.php?c=pages&a=blog" method="post">
@@ -31,6 +31,3 @@
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
         </div>
-
- 	
-</div>

@@ -93,7 +93,6 @@ class PagesController extends Controller
 			else
 			{
 				$errMsg = 'Nutzer oder Passwort nicht korrekt.';
-				echo $errMsg;
 			}
 
 			// if there is no error reset username
