@@ -131,6 +131,13 @@ footer {
 }
 
 
+/* css of accountpage */
+
+.account-info img {
+    height: 100px;
+}
+
+
 /* css of registration */
 
 .wrapper-registrierung {
