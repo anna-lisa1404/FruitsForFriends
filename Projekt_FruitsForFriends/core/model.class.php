@@ -62,6 +62,27 @@ abstract class Model
         }
     }
 
+    public function __get($key)
+    {
+        // TODO: Check is the key in the schema?
+        //       If so return the value in values if not exists return default value from schema or null
+        // key available?
+        if(isset($this->schema[$key]))
+        {
+            return $this->values[$key];
+        }
+        else
+        {
+            $className = get_called_class();
+            throw new \Exception(`${key} does not exists in this class ${className}`);
+        }
+    }
+
+    public function __destruct()
+    {
+        // TODO: Free memory here
+    }
+
     public static function find($whereStr = '')
     {
         $db = $GLOBALS['db'];
@@ -97,4 +118,45 @@ abstract class Model
 
         return null;
     }
+
+    public function insert()
+    {
+        // TODO: Implement insert
+        $db = $GLOBALS['db'];
+        $tableName = self::tablename();
+        $sqlStr = "INSERT INTO `${tableName}` (";
+        $valuesStr = "(";
+        foreach($this->schema as $key => $value)
+        {
+            $sqlStr.=$key.',';
+            $valuesStr.=':'.$key.',';
+        }
+
+        $sqlStr = rtrim($sqlStr, ',');
+        $valuesStr = rtrim($valuesStr, ',');
+
+        $sqlStr = $sqlStr.') VALUES '.$valuesStr.');';
+
+        try
+        {
+            $stmt=$db->prepare($sqlStr);
+            $stmt->execute($this->values);
+            $this->id = $db->lastInsertId();
+        }
+        catch(\PDOException $e)
+        {
+            print_r($e);
+        }
+    }
+
+    public function update()
+    {
+        // TODO: Implement update
+    }
+
+    public function destroy()
+    {
+        // TODO: Implement destroy / delete
+    }
 }
+
