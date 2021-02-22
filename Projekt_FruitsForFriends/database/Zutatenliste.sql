@@ -1,6 +1,14 @@
--- --------------------------------------------------
+-- -------------------------------------------------------
 -- eine Reihe von Zutaten der Säfte und Smoothies
--- --------------------------------------------------
+-- 
+-- es gibt drei Kategorien von Zutaten:
+-- -> Obst
+-- -> Gemüse
+-- -> Andere
+-- 
+-- 'origin' beschreibt das Herkunftsgebiet jeder Zutat
+-- hier gibt es heimisch, mediterran oder exotisch
+-- -------------------------------------------------------
 
 START TRANSACTION;
 USE `FruitsForFriends`;
