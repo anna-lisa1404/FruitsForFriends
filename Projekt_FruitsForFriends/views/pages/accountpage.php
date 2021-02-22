@@ -1,4 +1,4 @@
-
+<div>
     <div class="account-info">
         <?=getRandomProfilePicture()?>
         <h3>Hallo <?= $_SESSION['username']; ?>!</h3>
@@ -15,3 +15,4 @@
             <input name="submit_logout" type="submit" value="ausloggen">
         </form>
     </div>
+</div>

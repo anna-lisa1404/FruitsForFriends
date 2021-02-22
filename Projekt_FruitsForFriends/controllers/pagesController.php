@@ -10,51 +10,27 @@ class PagesController extends Controller
         header('Location: index.php?c=pages&a=index');
     }
 
-    public function actionStartpage()
-	{
+    public function actionStartpage() {}
 
-	}
+    public function actionProducts() {}
 
-    public function actionProducts()
-    {
+    public function actionSmoothiemaker() {}
 
-    }
+    public function actionBlog() {}
 
-    public function actionSmoothiemaker()
-    {
- 
-    }
+    public function actionAboutus() {}
 
-    public function actionBlog()
-    {
- 
-    }
+    public function actionPictures() {}
 
-    public function actionAboutus()
-    {
+    public function actionCart() {}
 
-    }
+	public function actionAccountpage() {}
 
-    public function actionPictures()
-    {
+	public function actionImprint() {}
 
-    }
-
-    public function actionCart()
-    {
-
-    }
-
-	public function actionAccountpage()
-	{
-
-	}
+	public function actionSupport() {}
 
     // TODO: validate Password
-	// TODO: redirect to account page
-	// TODO: set up all the session stuff
-	// TODO: error message
-	// Notice: Undefined variable: username in C:\Webprogrammierung\Projekt_FruitsForFriends\controllers\pagesController.php on line 88
 
 	public function actionLogin()
 	{
