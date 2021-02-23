@@ -6,6 +6,7 @@
 
         <div class="account-data">
             <h3>Hallo <?= $_SESSION['username']; ?>!</h3>
+            <br>
             <p>Deine Daten:</p>
             <p> <?= getSalutation().' '.$_SESSION['firstname'].' '.$_SESSION['lastname'] ?></p>
             <p> <?= $_SESSION['email'] ?></p>
