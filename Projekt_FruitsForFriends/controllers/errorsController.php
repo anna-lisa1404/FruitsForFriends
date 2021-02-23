@@ -6,7 +6,7 @@
 class ErrorsController extends Controller
 {
 
-	/*public function actionError404()
+	public function actionError404()
 	{
         $errorMessage = 'Unknown error, please check your code!';
 
@@ -26,5 +26,5 @@ class ErrorsController extends Controller
         // though the error message variable to the view, so we can show it to our customers
         $this->setParam('errorMessage', $errorMessage);
 	}
-    */
+    
 }

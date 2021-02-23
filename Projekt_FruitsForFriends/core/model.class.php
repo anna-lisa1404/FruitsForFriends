@@ -62,6 +62,7 @@ abstract class Model
         }
     }
 
+    /* 
     public function __get($key)
     {
         // TODO: Check is the key in the schema?
@@ -82,6 +83,7 @@ abstract class Model
     {
         // TODO: Free memory here
     }
+    */ 
 
     public static function find($whereStr = '')
     {
@@ -119,6 +121,7 @@ abstract class Model
         return null;
     }
 
+    /*
     public function insert()
     {
         // TODO: Implement insert
@@ -158,5 +161,6 @@ abstract class Model
     {
         // TODO: Implement destroy / delete
     }
+    */
 }
 

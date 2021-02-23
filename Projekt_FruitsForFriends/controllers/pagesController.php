@@ -12,8 +12,6 @@ class PagesController extends Controller
 
     public function actionStartpage() {}
 
-    public function actionProducts() {}
-
     public function actionSmoothiemaker() {}
 
     public function actionBlog() {}
@@ -21,8 +19,6 @@ class PagesController extends Controller
     public function actionAboutus() {}
 
     public function actionPictures() {}
-
-    public function actionCart() {}
 
 	public function actionAccountpage() {}
 

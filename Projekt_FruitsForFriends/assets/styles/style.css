@@ -1,3 +1,18 @@
+@font-face {
+    src: url(../fonts/Oswald-Bold.ttf);
+    font-family: OswaldBold;
+}
+
+@font-face {
+    src: url(../fonts/Oswald-Light.ttf);
+    font-family: OswaldLight;
+}
+
+@font-face {
+    src: url(../fonts/Oswald-Regular.ttf);
+    font-family: OswaldRegular;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +21,7 @@
 html,
 body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: OswaldRegular, Arial, Helvetica, sans-serif;
     color: grey;
 }
 
@@ -78,9 +93,6 @@ label #label {
     margin-top: 10px;
 }
 
-
-/* TODO: Logo auf kleinere Größen anpassen */
-
 header img {
     position: absolute;
     float: left;
@@ -107,7 +119,7 @@ header img {
         top: 50px;
         left: -100%;
         text-align: center;
-        transition: .5s;
+        transition: 0.5s;
         z-index: 10;
         margin-top: 6%;
     }
@@ -148,10 +160,9 @@ footer {
     border-radius: 5px;
     padding: 25px;
     width: 50%;
-    /* max-width: 220px; */
 }
 
-.form-area h1 {
+.background-picture-login h1 {
     color: rgb(162, 197, 35);
     margin-bottom: 2%;
 }
@@ -177,12 +188,13 @@ footer {
     color: grey;
 }
 
-.form-link a:hover {
+.background-picture-login a:hover {
     color: rgb(162, 197, 35);
 }
 
 .background-picture-login,
-.background-picture-registration {
+.background-picture-registration,
+.background-picture-error {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -208,7 +220,7 @@ footer {
 .logout-button {
     float: left;
     width: 40%;
-    margin-top: 2%;
+    margin-top: 8%;
     margin-left: 5%;
 }
 
@@ -234,6 +246,13 @@ footer {
     width: 50%;
     align-self: center;
     border: grey solid;
+}
+
+@media screen and (max-width:800px) {
+    .account-info,
+    .orders-info {
+        width: 80%;
+    }
 }
 
 
@@ -364,4 +383,21 @@ footer {
 
 .right {
     display: inline-block;
+}
+
+
+/* css of error-page */
+
+.background-picture-error {
+    background-image: url(../images/some_vegetables/chilli.jpg);
+}
+
+.background-picture-error h1 {
+    color: rgb(213, 84, 72);
+    margin-bottom: 2%;
+}
+
+.background-picture-error a:hover {
+    color: rgb(213, 84, 72);
+    font-weight: bold;
 }
