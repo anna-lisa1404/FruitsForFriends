@@ -59,7 +59,8 @@ class PagesController extends Controller
 				// if login was successful, open personal account page
 				// user stays logged in until they log out
 				$_SESSION['username'] = $username;
-				$_SESSION['account']  = $account;
+				getLoggedInUserData();
+				getLoggedInUserAddress();
 				header('Location: ?c=pages&a=accountpage');
 			}
 			else
