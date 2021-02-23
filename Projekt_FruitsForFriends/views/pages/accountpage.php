@@ -1,4 +1,4 @@
-<div>
+<div class="background-picture-accountpage">
     <div class="account-info">
         <div class="random-profile-picture">
             <?=getRandomProfilePicture()?>

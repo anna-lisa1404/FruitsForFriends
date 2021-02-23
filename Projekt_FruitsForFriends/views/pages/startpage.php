@@ -23,6 +23,7 @@
         <img src=<?= IMAGEPATH.'decoration_pics/stock_green_guy.jpg' ?> width="500" height="500" alt="guy with green juice" />
             </td>
             <td align="center" valign="top">
+                <h1>Willkommen bei Fruits For Friends!</h1>
             Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam nonumy eirmod
             tempor my eirmod tempor invidunt ut labore et

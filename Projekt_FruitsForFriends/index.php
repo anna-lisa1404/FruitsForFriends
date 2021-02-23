@@ -78,10 +78,12 @@ else
     <title>Fruits for Friends</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
+        <?php
+            include (PAGESPATH.'header.php');
+        ?>
         <div class="page-container">
-            <?php 
-                include (PAGESPATH.'header.php');
+            <?php
                 $controller->render();
             ?>
         </div>

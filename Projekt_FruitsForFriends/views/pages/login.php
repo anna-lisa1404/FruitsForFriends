@@ -1,4 +1,3 @@
-
 <div class="background-picture-login">
     <div class="login-wrapper">
         <div class="form-area">
