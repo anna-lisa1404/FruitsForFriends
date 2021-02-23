@@ -48,14 +48,14 @@
 
                         <div class="form-group">
                             <label for="password ">Passwort*:</label>
-                            <input class="form-control " id="Password " type="text " name="Passwort " placeholder="Passwort " >
+                            <input class="form-control " id="Password " type="password" name="Passwort " placeholder="Passwort " >
                         </div>
 
                         <br>
 
                         <div class="form-group">
                             <label for="passwordRepeat ">Passwort wiederholen*:</label>
-                            <input class="form-control " id="PasswordRepeat " type="text " name="Passwort wiederholen " placeholder="Passwort wiederholen " >
+                            <input class="form-control " id="PasswordRepeat " type="password" name="Passwort wiederholen " placeholder="Passwort wiederholen " >
                         </div>
 
                         <br>
