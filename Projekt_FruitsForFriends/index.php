@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['account'] = null;
+$_SESSION['cart'] = [];
 
 // load needed variables/defines/configs
 require_once 'config/init.php';

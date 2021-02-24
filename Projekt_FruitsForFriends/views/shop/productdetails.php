@@ -2,7 +2,7 @@
 
 <div class="product-details-wrapper">
     <div class="product-details-picture">
-        <img src="<?= IMAGEPATH.'decoration_pics/produktfoto.jpg' ?>" alt="<?=$product['name']?>">
+        <img src="<?= getProductPicture($product['name']) ?>" alt="<?=$product['name']?>">
     </div>
     <div class="product-description">
         <h1 class="name"><?=$product['name']?></h1>
@@ -16,7 +16,7 @@
             <label for="quantity">Wie viel dürfen es sein?</label>
             <br><br>
             <input type="number" name="quantity" id="quantity" value="1" placeholder="Menge" required>
-            <input type="hidden" name="id" value="<?=$product['id']?>">
+            <input type="hidden" name="product_id" value="<?=$product['id']?>">
             <input type="submit" name="add_to_cart" value="zum Warenkorb hinzufügen">
         </form>
 

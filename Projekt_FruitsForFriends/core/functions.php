@@ -103,6 +103,13 @@ function getSalutation()
     return $salutation;
 }
 
+// finds the right picture for the product
+function getProductPicture($product)
+{
+    $imagepath = IMAGEPATH."product_pictures/$product.jpg";
+    return $imagepath;
+}
+
 // displays a random single-fruit picture as an account's profile picture every time the account-page is refreshed
 function getRandomProfilePicture() 
 {
