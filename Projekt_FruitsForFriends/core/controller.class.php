@@ -34,7 +34,6 @@ class Controller
 		// check the file exists
 		if(!file_exists($viewPath))
 		{
-			// TODO: create and redirect to an error page--
 			header('Location: index.php?c=errors&a=error404');
     		exit(0);
 		}

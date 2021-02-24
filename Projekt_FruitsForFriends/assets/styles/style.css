@@ -16,6 +16,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -315,6 +316,42 @@ footer a:hover {
 
 .products-nav a:hover {
     color: rgb(213, 84, 72);
+}
+
+.products-wrapper,
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    margin-left: 5%;
+}
+
+.product {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    width: 25%;
+    padding-bottom: 60px;
+}
+
+.products img {
+    width: 200px;
+    height: 200px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.product-name,
+.product-price {
+    display: block;
+    color: grey;
+}
+
+.product-name {
+    padding: 20px 0 2px 0;
+    font-size: 20px;
 }
 
 

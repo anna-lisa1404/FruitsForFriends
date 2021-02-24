@@ -9,6 +9,7 @@ abstract class Model
     const TYPE_INT  = 'int';
     const TYPE_DATE = 'date';
     const TYPE_ENUM = 'enum';
+    const TYPE_DECIMAL = 'decimal';
 
     protected $schema = [];
     protected $data = [];
@@ -121,7 +122,11 @@ abstract class Model
         return null;
     }
 
-    /*
+    public function getAllProducts() {
+
+    }
+
+    
     public function insert()
     {
         // TODO: Implement insert
@@ -161,6 +166,6 @@ abstract class Model
     {
         // TODO: Implement destroy / delete
     }
-    */
+    
 }
 

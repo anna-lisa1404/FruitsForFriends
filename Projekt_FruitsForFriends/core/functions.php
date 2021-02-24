@@ -38,6 +38,24 @@ function getLoggedInUserAddress()
     }
 }
 
+function loadAllProducts()
+{
+    $db = $GLOBALS['db'];
+    $data = $db->query("SELECT id, name, price, taste FROM drinks") or die($db->error);
+
+    $products = $data->fetchAll(PDO::FETCH_ASSOC);
+    return $products;
+}
+
+function loadFilteredProducts($type)
+{
+    $db = $GLOBALS['db'];
+    $data = $db->query("SELECT id, name, price, taste FROM drinks WHERE typeOfDrink = '$type'") or die($db->error);
+
+    $products = $data->fetchAll(PDO::FETCH_ASSOC);
+    return $products;
+}
+
 function getSalutation()
 {
     $gender = $_SESSION['gender'];

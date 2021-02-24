@@ -13,6 +13,7 @@ require_once COREPATH.'model.class.php';
 
 // load the models
 require_once MODELSPATH.'accountsModel.php';
+require_once MODELSPATH.'drinksModel.php';
 
 $controllerName = 'pages'; // default controller if noting is set
 $actionName = 'startpage'; // default action if nothing is set

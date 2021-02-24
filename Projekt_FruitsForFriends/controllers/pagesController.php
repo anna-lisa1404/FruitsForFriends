@@ -10,6 +10,7 @@ class PagesController extends Controller
         header('Location: index.php?c=pages&a=index');
     }
 
+	// nothing todo in these actions, they only load static pages
     public function actionStartpage() {}
 
     public function actionSmoothiemaker() {}
@@ -17,8 +18,6 @@ class PagesController extends Controller
     public function actionBlog() {}
 
     public function actionAboutus() {}
-
-    public function actionPictures() {}
 
 	public function actionAccountpage() {}
 
@@ -59,6 +58,7 @@ class PagesController extends Controller
 				// if login was successful, open personal account page
 				// user stays logged in until they log out
 				$_SESSION['username'] = $username;
+				// loads all the data and the address of the user into the session
 				getLoggedInUserData();
 				getLoggedInUserAddress();
 				header('Location: ?c=pages&a=accountpage');
@@ -79,7 +79,6 @@ class PagesController extends Controller
 		// set param email to prefill login input field
 		$this->setParam('username', $username);
 		$this->setParam('errMsg', $errMsg);
-	/*	$this->setParam('test', 'Hello World!'); */
 	}
 
     public function actionRegistration()
