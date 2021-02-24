@@ -2,6 +2,9 @@
     <h1>Impressum</h1>
         <p> -Fruits for Friends Deutschland GmbH- <br />
             <br />
+
+            <a href="documentation/documentation.html">Link zur Dokumentation</a><br /><br />
+
             Leipziger Straße 100<br />
             99085 Erfurt<br />
             Deutschland

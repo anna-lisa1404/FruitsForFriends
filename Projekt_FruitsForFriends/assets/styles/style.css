@@ -596,6 +596,7 @@ footer a:hover {
     display: inline-block;
 }
 
+
 /*css for Impressum*/
 
 .impressum p {
@@ -613,6 +614,7 @@ footer a:hover {
     display: inline-block;
 }
 
+
 /* css of error-page */
 
 .background-picture-error {
@@ -627,4 +629,11 @@ footer a:hover {
 .background-picture-error a:hover {
     color: rgb(213, 84, 72);
     font-weight: bold;
+}
+
+
+/* css of documentation */
+
+.documentation-list-details li {
+    list-style-type: square;
 }
