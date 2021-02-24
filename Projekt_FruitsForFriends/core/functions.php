@@ -1,5 +1,6 @@
 <?php
 
+// loads the personal data of the currently logged in user into the session
 function getLoggedInUserData()
 {
     $where = $_SESSION['username'];
@@ -20,6 +21,7 @@ function getLoggedInUserData()
     }
 }
 
+// loads the address of the currently logged in user into the session
 function getLoggedInUserAddress()
 {
     $where = $_SESSION['addresses_id'];
@@ -38,6 +40,7 @@ function getLoggedInUserAddress()
     }
 }
 
+// loads all drinks
 function loadAllProducts()
 {
     $db = $GLOBALS['db'];
@@ -47,6 +50,7 @@ function loadAllProducts()
     return $products;
 }
 
+// loads either smoothies or juices
 function loadFilteredProducts($type)
 {
     $db = $GLOBALS['db'];
@@ -56,6 +60,7 @@ function loadFilteredProducts($type)
     return $products;
 }
 
+// displays the right salutation for the gender or none, if the user chose 'diverse'
 function getSalutation()
 {
     $gender = $_SESSION['gender'];
@@ -74,6 +79,7 @@ function getSalutation()
     return $salutation;
 }
 
+// displays a random single-fruit picture as an account's profile picture every time the account-page is refreshed
 function getRandomProfilePicture() 
 {
     $dirPath = IMAGEPATH.'single_fruits/';

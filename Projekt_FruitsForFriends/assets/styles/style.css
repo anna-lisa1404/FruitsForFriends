@@ -185,7 +185,8 @@ footer a:hover {
 
 /* css of login */
 
-.form-area {
+.form-area,
+.product-introduction {
     position: absolute;
     top: 40%;
     left: 50%;

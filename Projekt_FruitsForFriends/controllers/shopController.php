@@ -12,7 +12,13 @@ class ShopController extends Controller
 
     public function actionSmoothies() {}
 
-    public function actionProductdetails() {}
+    public function actionProductdetails() {
+        // checks which product the user clicked on
+       /* if(isset($_GET['id']))
+        {
+            $stmt = $pdo->prepare
+        } */
+    }
 
     public function actionCart() {}
 }
