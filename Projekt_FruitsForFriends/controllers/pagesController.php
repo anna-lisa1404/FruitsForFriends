@@ -10,7 +10,7 @@ class PagesController extends Controller
         header('Location: index.php?c=pages&a=index');
     }
 
-	// nothing todo in these actions, they simply load the pages
+	// nothing todo in these actions, they only load static pages
     public function actionStartpage() {}
 
     public function actionSmoothiemaker() {}
@@ -111,7 +111,7 @@ class PagesController extends Controller
 				 || empty($_POST['email']) )
 					
 				 {
-					 viewError("Alle Felder sollen noch ausgefühlt werden!");
+					 $errMsg= ("Alle Felder sollen noch ausgefühlt werden!");
 				 }
 		 
 				 else{
@@ -177,8 +177,8 @@ class PagesController extends Controller
 									 'password' => $password,
 									 'email' => $email,
 								 );
-								 $newAccount = new \app\models($newaccountData);
-								 $newAccount->insert($errMsg);
+								 $newAccount = new models($newuserData);
+								 $newAccount->insert($lastname, $firstname,$birthdate,$gender,$username,$password,$email);
 								 $success = true;
 							 }
 							 catch(\Exeption $exeptionError)
@@ -193,7 +193,7 @@ class PagesController extends Controller
 			  
 		 $this->setparam('errMsg', $errMsg);
 		 $this->setparam('success', $success);
-	 }
+	 	}
  
  
     }
