@@ -14,6 +14,8 @@ class ShopController extends Controller
 
     public function actionProductdetails() {
         $errMsg = null;
+        $productId = null;
+        $productQty = null;
 
         if(isset($_POST['add_to_cart']))
         {
@@ -59,6 +61,8 @@ class ShopController extends Controller
             }
         }
         $this->setParam('errMsg', $errMsg);
+        $this->setParam('productId', $productId);
+        $this->setParam('productQty', $productQty);
     }
 
     public function actionCart() {}
