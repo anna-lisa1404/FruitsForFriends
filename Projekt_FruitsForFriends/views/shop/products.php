@@ -1,2 +1,3 @@
-
-    <h1>Our Products</h1>
+<div class="background-picture-products">    
+    <?php include(SHOPPATH.'shopNav.php'); ?>
+</div>
