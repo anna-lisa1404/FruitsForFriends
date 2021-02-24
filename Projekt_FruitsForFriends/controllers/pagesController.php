@@ -10,7 +10,7 @@ class PagesController extends Controller
         header('Location: index.php?c=pages&a=index');
     }
 
-	// nothing todo in these actions, they only load static pages
+	// nothing todo in these actions, they simply load the pages
     public function actionStartpage() {}
 
     public function actionSmoothiemaker() {}

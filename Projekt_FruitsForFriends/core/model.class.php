@@ -121,11 +121,6 @@ abstract class Model
 
         return null;
     }
-
-    public function getAllProducts() {
-
-    }
-
     
     public function insert()
     {

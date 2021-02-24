@@ -413,6 +413,7 @@ footer a:hover {
     border-radius: 5px;
     padding: 2%;
     width: 40%;
+    height: 500px;
     margin-right: 10%;
 }
 
@@ -450,6 +451,9 @@ footer a:hover {
     .product-details-wrapper img {
         width: 250px;
         height: 250px;
+    }
+    .product-description {
+        height: unset;
     }
     .product-details-picture,
     .product-description {
