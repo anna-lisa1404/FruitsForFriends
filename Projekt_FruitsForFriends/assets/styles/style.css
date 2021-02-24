@@ -630,10 +630,3 @@ footer a:hover {
     color: rgb(213, 84, 72);
     font-weight: bold;
 }
-
-
-/* css of documentation */
-
-.documentation-list-details li {
-    list-style-type: square;
-}

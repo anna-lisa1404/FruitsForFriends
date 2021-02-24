@@ -1,0 +1,12 @@
+/* css of documentation */
+
+.documentation-list-details li {
+    list-style-type: square;
+}
+
+.file-structure-pictures img {
+    display: inline-block;
+    height: 500px;
+    width: auto;
+    margin: 10px;
+}

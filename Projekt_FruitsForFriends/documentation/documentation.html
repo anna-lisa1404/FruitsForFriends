@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
+        <link rel="stylesheet" href="../assets/styles/documentation_style.css" type="text/css">
         <title>Fruits for Friends Dokumentation</title>
     </head>
 
@@ -37,13 +37,38 @@
 
             <hr>
             <h2>3. Seitenstruktur</h2>
+            <p>Unsere Seite hat folgende Seiten und Unterseiten:</p>
+            <ul>
+                <li>Startseite</li>
+                <li>Unsere Produkte</li>
+                <ul class="documentation-list-details">
+                    <li>alle Getränke</li>
+                    <li>Säfte</li>
+                    <li>Smoothies</li>
+                </ul>
+                <li>Smoothie Maker</li>
+                <li>Blog</li>
+                <li>Das sind wir</li>
+                <li>Warenkorb</li>
+                <li>Konto</li>
+                <ul class="documentation-list-details">
+                    <li>Login</li>
+                    <li>Registrierung</li>
+                    <li>Accountseite des Users</li>
+                </ul>
+            </ul>
+            <p>Außerdem sind folgende Seiten über den Footer erreichbar:</p>
+            <ul>
+                <li>Impressum</li>
+                <li>Kontaktformular</li>
+            </ul>
 
             <hr>
             <h2>4. Design der Seite</h2>
 
             <hr>
             <h2>5. Funktionalitäten und erstellte Seiten</h2>
-            <ul class="documentation-list">
+            <ul>
                 <li><b>Seiten und Seitenteile</b></li>
                 <ul class="documentation-list-details">
                     <li>Startseite</li>
@@ -62,7 +87,7 @@
                     <li>Produkt-Seite (Detailansicht)</li>
                 </ul>
                 <li><b>Funktionalitäten</b></li>
-                <ul class="document-list-details">
+                <ul class="documentation-list-details">
                     <li>Session-Management: Nutzerdaten des angemeldeten Users über alle Seiten vorhanden und abrufbar</li>
                     <li>Login: Nutzer kann sich auf der Seite anmelden, bleibt über die Seite hinweg angemeldet, bis er sich ausloggt</li>
                     <li>Logout</li>
@@ -80,6 +105,25 @@
 
             <hr>
             <h2>6. Projekt- und Ordnerstruktur</h2>
+            <div class="file-structure-pictures">
+                <img src="../assets/images/documentation_pictures/ordnerstruktur1.png" alt="Ordnerstruktur Teil 1">
+                <img src="../assets/images/documentation_pictures/ordnerstruktur2.png" alt="Ordnerstruktur Teil 2">
+                <img src="../assets/images/documentation_pictures/ordnerstruktur3.png" alt="Ordnerstruktur Teil 3">
+            </div>
+            <div>
+                <p>
+                    Aufgebaut wurde das Projekt auf Grundlage der MVC Struktur. Dabei gibt es drei Arten von Seiten, welche natürlich durch einen entsprechenden Controller geladen werden:
+                </p>
+                <ul>
+                    <li>errors: beinhaltet die Seite "Error404" welche immer angezeigt wird, wenn eine gesuchte Seite nicht existiert und welche den Nutzer auf die Startseite zurück führt</li>
+                    <li>pages: beinhaltet alle Seiten und Seitenteile (wie Header und Footer) mit Ausschluss der Shop-Seiten</li>
+                    <li>shop: beinhaltet alle Seiten und Seitenteile die zum Shop gehören</li>
+                </ul>
+                <p>
+                    Im assest Ordner befinden sich neben der auf der Seite genutzten Schriftart "Oswald" auch die genutzten Bilder. Diese sind je nach ihrem Verwendungszweck in verschiedene Unterordner einsortiert. Im styles Ordner befindet sich neben der Standard style.css
+                    nun außerdem eine documentation_style.css zur formatierung der Dokumentation. Diese ist in den Bildern oben noch nicht vorhanden.
+                </p>
+            </div>
 
             <hr>
             <h2>7. Datenbank</h2>
