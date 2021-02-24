@@ -3,8 +3,8 @@
 <title>Fruits for Friends</title>
 </head>
 <body bgcolor="#E7E8E4">
-    <h1 align="center">Startseite</h1>
-    <h1 align="center">Coming soon</h1>
+    <h1 align="center">Smoothie Maker</h1>
+    <h1 align="center">Coming soon!</h1>
         <tr>
         <td valign="top">
         <table border="0" width="100%">
