@@ -596,10 +596,22 @@ footer a:hover {
     display: inline-block;
 }
 
+/*css for Impressum*/
+
+.impressum p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.impressum h1 {
+    text-align: center;
+}
+
 .right {
     display: inline-block;
 }
-
 
 /* css of error-page */
 
