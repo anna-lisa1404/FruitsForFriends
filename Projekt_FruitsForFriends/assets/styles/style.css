@@ -169,6 +169,7 @@ footer {
     width: 100%;
     height: 80px;
     padding: 10px 0;
+    margin: 0;
     text-align: center;
     background-color: white;
 }
@@ -325,8 +326,7 @@ footer a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0 0 0;
-    margin-left: 5%;
+    padding: 40px;
 }
 
 .product {
@@ -334,7 +334,10 @@ footer a:hover {
     overflow: hidden;
     text-decoration: none;
     width: 25%;
-    padding-bottom: 60px;
+    padding: 3%;
+    background-color: white;
+    border: grey solid;
+    border-radius: 5px;
 }
 
 .products img {
@@ -342,6 +345,7 @@ footer a:hover {
     height: 200px;
     transform: scale(1);
     transition: 1s;
+    border: grey solid;
 }
 
 .product-name,
@@ -353,6 +357,89 @@ footer a:hover {
 .product-name {
     padding: 20px 0 2px 0;
     font-size: 20px;
+}
+
+.product-details-wrapper {
+    margin-top: 2%;
+}
+
+.product-details-picture {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.product-details-picture img {
+    width: 500px;
+    height: 500px;
+    border: grey solid;
+}
+
+.product-description {
+    float: right;
+    background-color: white;
+    border: grey solid;
+    border-radius: 5px;
+    padding: 2%;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.product-description .name,
+.product-description .price,
+.product-description label {
+    color: rgb(77, 100, 141);
+}
+
+.product-description label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-description input {
+    padding: 5px;
+}
+
+.product-description input[type="submit"] {
+    background-color: rgb(77, 100, 141);
+    color: white;
+    border: rgb(77, 100, 141) solid;
+}
+
+.product-description input[type="submit"]:hover {
+    background-color: rgb(0, 141, 203);
+    cursor: pointer;
+}
+
+.product-text {
+    margin: 5%;
+}
+
+@media screen and (max-width:800px) {
+    .product img {
+        width: 120px;
+        height: 120px;
+    }
+    .product-name {
+        font-size: 10px;
+    }
+    .product-details-wrapper img {
+        width: 250px;
+        height: 250px;
+    }
+    .product-details-picture,
+    .product-description {
+        float: unset;
+        margin: unset;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .product-details-picture img {
+        width: 100%;
+        height: auto;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
 }
 
 

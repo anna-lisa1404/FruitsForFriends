@@ -60,6 +60,30 @@ function loadFilteredProducts($type)
     return $products;
 }
 
+function loadProductDetails() {
+    if(isset($_GET['id']))
+    {
+        $id = $_GET['id'];
+        $db = $GLOBALS['db'];
+        $stmt = $db->query("SELECT * FROM drinks WHERE id = '$id'");
+
+        $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if(!$product)
+        {
+            exit('Product does not exist!');
+        }
+        else
+        {
+            return $product;
+        }
+    }
+    else
+    {
+        exit('Product does not exist!');
+    }
+}
+
 // displays the right salutation for the gender or none, if the user chose 'diverse'
 function getSalutation()
 {

@@ -25,8 +25,3 @@
             </div>
         </div>
 </header>
-  <!--  <div class="navbar">
-        <nav>
-
-        </nav>
-    </div> -->

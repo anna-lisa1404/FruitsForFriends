@@ -13,11 +13,18 @@ class ShopController extends Controller
     public function actionSmoothies() {}
 
     public function actionProductdetails() {
-        // checks which product the user clicked on
-       /* if(isset($_GET['id']))
+        if(isset($_POST['add_to_cart']))
         {
-            $stmt = $pdo->prepare
-        } */
+            if(isset($_SESSION['username']))
+            {
+                
+            }
+            else
+            {
+                $errMsg = 'Bitte melde dich erst an für diese Aktion.';
+            }
+        }
+        $this->setParam('errMsg', $errMsg);
     }
 
     public function actionCart() {}
