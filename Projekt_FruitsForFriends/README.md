@@ -20,4 +20,4 @@ Es gibt zwei Testuser:
 
 ## Link zum Repository
 https://github.com/anna-lisa1404/FruitsForFriends
-## !!Bilder sind nur über dieses Repository zu finden!! Für die Abgabe waren die Dateien zu groß
+## !!Bilder sind nur über dieses Repository zu finden!! Für die Abgabe waren die Dateien zu groß. Sie sind zu finden unter "FruitsForFriends/assets/images". Dort sind sie bereits in passende Unterordner eingeteilt. Um die Webseite richtig darzustellen, muss der Ordner "images" lediglich in den Ordner "assets" eingefügt werden.
