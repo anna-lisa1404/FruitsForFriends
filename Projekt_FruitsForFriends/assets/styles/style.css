@@ -191,7 +191,8 @@ footer a:hover {
 /* css of login */
 
 .form-area,
-.product-introduction {
+.product-introduction,
+.order-notification {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -214,7 +215,8 @@ footer a:hover {
 }
 
 .form-submit input[type="submit"],
-.logout-button input[type="submit"] {
+.logout-button input[type="submit"],
+.place-order input[type="submit"] {
     display: inline-block;
     border: none;
     font-size: 16px;
@@ -235,7 +237,8 @@ footer a:hover {
     padding: 10px;
 }
 
-.form-link a {
+.form-link a,
+.order-notification a {
     text-decoration: none;
     color: grey;
 }
@@ -248,6 +251,7 @@ footer a:hover {
 .background-picture-registration,
 .background-picture-accountpage,
 .background-picture-products,
+.background-picture-order,
 .background-picture-error {
     position: absolute;
     object-fit: cover;
@@ -457,6 +461,69 @@ footer a:hover {
         height: auto;
         margin-top: 7%;
         margin-bottom: 7%;
+    }
+}
+
+
+/* css of cart */
+
+.cart-content {
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 30%;
+    padding: 20px;
+    background-color: white;
+    border: grey solid;
+    border-radius: 5px;
+}
+
+.cart-picture img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.cart-content table td {
+    padding: 20px 0;
+    width: 20%;
+}
+
+.cart-content h1,
+.cart-content h2 {
+    color: rgb(97, 54, 89);
+}
+
+.cart-content .subtotal {
+    color: rgb(97, 54, 89);
+}
+
+.place-order input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: rgb(97, 54, 89);
+}
+
+.background-picture-order {
+    background-image: url(../images/ingredient_pictures/birne.jpg);
+}
+
+.order-notification h1 {
+    color: rgb(255, 183, 69);
+}
+
+.order-notification a:hover {
+    color: rgb(255, 183, 69);
+}
+
+@media screen and (max-width:800px) {
+    .cart-content {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .cart-picture img {
+        height: 80px;
+        width: 80px;
     }
 }
 
