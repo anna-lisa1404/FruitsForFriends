@@ -645,15 +645,6 @@ footer a:hover {
 }
 
 
-/* css of support-formular */
-
-.left {
-    font-weight: bold;
-    width: 20%;
-    display: inline-block;
-}
-
-
 /*css for Impressum*/
 
 .impressum p {
@@ -686,4 +677,133 @@ footer a:hover {
 .background-picture-error a:hover {
     color: rgb(213, 84, 72);
     font-weight: bold;
+}
+
+
+/* css of support-formular */
+
+.left {
+    font-weight: bold;
+    width: 20%;
+    display: inline-block;
+}
+
+.right {
+    display: inline-block;
+}
+
+
+/*css of startpage */
+
+.scontainer {
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px
+}
+
+.scontainer h1 {
+    text-align: center;
+}
+
+.start {
+    float: left;
+    width: 100%;
+}
+
+.startcard {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+
+/*css for smoothiemaker*/
+
+.smcontainer {
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px
+}
+
+.smcontainer h1 {
+    text-align: center;
+}
+
+.smcontainer h2 {
+    text-align: center;
+}
+
+.smooth {
+    float: left;
+    width: 100%;
+}
+
+.smoothcard {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.smoothcard h1 {
+    text-align: center;
+}
+
+.smoothcard1 h1 {
+    text-align: center;
+    color: #d54854;
+}
+
+.smoothcard2 h1 {
+    text-align: center;
+    color: #4d648d
+}
+
+.smoothcard3 h1 {
+    text-align: center;
+    color: #f8a055;
+}
+
+.smoothcard4 h1 {
+    text-align: center;
+    color: #613659;
+}
+
+
+/*css for about us*/
+
+.acontainer {
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+.acontainer h1 {
+    text-align: center;
+}
+
+.aclass {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.gclass h1 {
+    text-align: center;
+    color: #d54854;
+}
+
+.lclass h1 {
+    text-align: center;
+    color: #4d648d;
+}
+
+.kclass h1 {
+    text-align: center;
+    color: #f8a055;
 }
