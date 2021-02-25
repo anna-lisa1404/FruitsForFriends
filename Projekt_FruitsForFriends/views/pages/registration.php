@@ -1,3 +1,4 @@
+<!-- bearbeitet von: Salma Alkhaiyal -->
 
 <div class="background-picture-registration">
 

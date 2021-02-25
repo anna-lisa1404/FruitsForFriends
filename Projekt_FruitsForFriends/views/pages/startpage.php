@@ -1,18 +1,4 @@
-<!-- bitte kein inline-css verwenden, ist schlechter codestyle -> auslagern in style.css -->
-<!-- statt mit Tabellen vielleicht lieber mit Div's arbeiten, vielleicht ist das etwas einfacher -->
-
-<!-- <div role="search">
-        <div style="text-align: left; margin: 1em auto;">
-        <table border="0" width="100%">
-        <tr>
-            <td align="center" width="150px">
-                <div role="search">
-                    <input width="100%" role="searchbox" type="text">
-                    <button role="button">Suchen</button>
-            </td>
-        </tr>
-        </table>
--->
+<!-- bearbeitet von: Sarah Schelle -->
 
         <tr>
             </td>

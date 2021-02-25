@@ -1,8 +1,7 @@
 <?php
-
-// TODO: add namespace again
-// namespace fff\model;
-// use fff\core\Model as Model;
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 class Accounts extends Model
 {

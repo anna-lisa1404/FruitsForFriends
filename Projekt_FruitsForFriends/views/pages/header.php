@@ -1,10 +1,7 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <header>
-        <!-- <h1>Fruits For Friends</h1> -->
         <nav class="top-nav">
-            <!--
-            <input type="text" name="searchbar" placeholder="ein Produkt suchen...">
-            <input name="submit" type="submit" value="los!">
-            -->
             <input type="checkbox" id="mobile-nav">
             <label for="mobile-nav">
                 <b id="label">Menu</b>
@@ -20,8 +17,4 @@
                 <li><a href="index.php?c=pages&a=login">Konto</a></li>
             </ul>
         </nav>
-        <div class="banner-area">
-            <div class="banner-text">
-            </div>
-        </div>
 </header>

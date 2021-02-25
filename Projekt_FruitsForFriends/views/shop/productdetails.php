@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <?php $product =loadProductDetails(); ?>
 
 <div class="product-details-wrapper">
@@ -9,6 +11,20 @@
         <span class="price"><?='Preis: '.$product['price'].'€'?></span>
         <div class="product-text">
             <p>Hier ist eine Beschreibung, wie gut dieses Getränk schmeckt. Es ist wirklich sehr lecker! Du musst es unbedingt probieren.</p>
+            <br>
+
+            <div class="ingredient-display">
+                <ul class="ingredient-list">
+                    <?php foreach(getIngredients() as $ingredient) : ?>
+                        <li class="ingredient">
+                            <img src="<?= getIngredientPicture($ingredient['description']) ?>" alt="<?=$ingredient['description']?>">
+                            <br>
+                            <span class="ingredient-amount"><?=$ingredient['description'].': '.$ingredient['amountInPercent'].'%'?></span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
             <br>
             <p>Geschmacksrichtung: <?=$product['taste']?></p>
         </div>
@@ -25,6 +41,5 @@
                 <?=$errMsg?>
             </div>
         <? endif; ?>
-
     </div>
 </div>

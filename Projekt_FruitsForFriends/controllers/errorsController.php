@@ -1,7 +1,7 @@
 <?php
-
-// TODO: add namespace again
-// namespace fff\controller;
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 class ErrorsController extends Controller
 {
@@ -23,7 +23,6 @@ class ErrorsController extends Controller
             }
         }
 
-        // though the error message variable to the view, so we can show it to our customers
         $this->setParam('errorMessage', $errorMessage);
 	}
     

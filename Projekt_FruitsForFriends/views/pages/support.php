@@ -1,3 +1,4 @@
+<!-- bearbeitet von: Sarah Schelle -->
 
 <h1>Herzlich Willkommen beim Supportformular</h1>
     <p>Bitte füllen Sie das Formular komplett aus und senden Sie es anschließend per E-Mail an unsere Kundenabteilung.<br> Wir werden versuchen Ihnen umgehend bei Ihrem Anliegen zu helfen.</p>

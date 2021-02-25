@@ -1,4 +1,7 @@
 <?php
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 // loads the personal data of the currently logged in user into the session
 function getLoggedInUserData()
@@ -60,7 +63,8 @@ function loadFilteredProducts($type)
     return $products;
 }
 
-function loadProductDetails() {
+function loadProductDetails() 
+{
     if(isset($_GET['id']))
     {
         $id = $_GET['id'];
@@ -84,6 +88,33 @@ function loadProductDetails() {
     }
 }
 
+function getIngredients() 
+{
+    if(isset($_GET['id']))
+    {
+        $id = $_GET['id'];
+        $db = $GLOBALS['db'];
+        $data = $db->query("SELECT amountInPercent, description FROM composition_of_drinks LEFT JOIN ingredients ON composition_of_drinks.ingredients_id = ingredients.id WHERE drinks_id = $id");
+
+        $ingredients = $data->fetchAll(PDO::FETCH_ASSOC);
+        return $ingredients;
+    }
+}
+
+// finds the right picture for the product
+function getProductPicture($product)
+{
+    $imagepath = IMAGEPATH."product_pictures/$product.jpg";
+    return $imagepath;
+}
+
+// finds the right picture for the ingredient
+function getIngredientPicture($ingredient)
+{
+    $imagepath = IMAGEPATH."ingredient_pictures/$ingredient.jpg";
+    return $imagepath;
+}
+
 // displays the right salutation for the gender or none, if the user chose 'diverse'
 function getSalutation()
 {
@@ -101,13 +132,6 @@ function getSalutation()
     }
 
     return $salutation;
-}
-
-// finds the right picture for the product
-function getProductPicture($product)
-{
-    $imagepath = IMAGEPATH."product_pictures/$product.jpg";
-    return $imagepath;
 }
 
 // displays a random single-fruit picture as an account's profile picture every time the account-page is refreshed

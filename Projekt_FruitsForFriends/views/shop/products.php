@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <div class="background-picture-products">    
     <?php include(SHOPPATH.'shopNav.php'); ?>
     

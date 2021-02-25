@@ -1,3 +1,4 @@
+<!-- bearbeitet von: Sarah Schelle -->
 
 <h1 align="center">Unsere Unternehmensphilosophie</h1>
  <a href=""></a>

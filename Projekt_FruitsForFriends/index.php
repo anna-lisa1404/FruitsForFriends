@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <?php
 session_start();
 $_SESSION['account'] = null;
@@ -7,7 +9,7 @@ $_SESSION['cart'] = [];
 require_once 'config/init.php';
 require_once 'config/database.php';
 
-// load core stuff
+// load all the stuff from core
 require_once COREPATH.'functions.php';
 require_once COREPATH.'controller.class.php';
 require_once COREPATH.'model.class.php';
@@ -50,7 +52,6 @@ if(file_exists(CONTROLLERSPATH.$controllerName.'Controller.php'))
     $actionMethod = 'action'.ucfirst($actionName);
     if(!method_exists($controller, $actionMethod))
     {
-        // TODO: Handle better errors with an Redirect to an error page--
         header('Location: index.php?c=errors&a=error404');
         exit(0);
     }
@@ -64,7 +65,6 @@ if(file_exists(CONTROLLERSPATH.$controllerName.'Controller.php'))
 }
 else
 {
-    // TODO: Handle better errors with an Redirect to an error page--
     header('Location: index.php?c=errors&a=error404');
     exit(0);
 }

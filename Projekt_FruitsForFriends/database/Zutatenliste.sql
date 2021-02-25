@@ -1,3 +1,7 @@
+--
+-- bearbeitet von: Anna-Lisa Merkel
+--
+
 -- -------------------------------------------------------
 -- eine Reihe von Zutaten der Säfte und Smoothies
 -- 

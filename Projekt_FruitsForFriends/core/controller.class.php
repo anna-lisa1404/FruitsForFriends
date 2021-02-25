@@ -1,4 +1,7 @@
 <?php
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 // TODO: add namespace again
 // namespace fff\core;
@@ -15,23 +18,15 @@ class Controller
 	{
 		$this->controller = $controller;
 		$this->action = $action;
-
-		// if($this->loggedIn())
-		{
-			// TODO: Load the current user using the session and the account model
-			// 		 write user model object to member variable currentUser
-		}
 	}
 
-    	/**
-	 * Render the correct view for the controller and action, using the params array to extract variables for the view
-	 */
+	// renders the correct view
 	public function render()
 	{
 		// generate the view path
 		$viewPath = VIEWSPATH.$this->controller.DIRECTORY_SEPARATOR.$this->action.'.php';
 
-		// check the file exists
+		// check if the file exists
 		if(!file_exists($viewPath))
 		{
 			header('Location: index.php?c=errors&a=error404');
@@ -41,7 +36,7 @@ class Controller
 		// extract the params array to get all needed variables for the view
 		extract($this->params);
 
-		// just include the view here, it's like putting the code of the php file by copy paste on this position.
+		// includes the right view
 		include $viewPath;
 	}
 

@@ -1,7 +1,7 @@
 <?php
-
-// TODO: add namespace again
-// namespace fff\controller;
+/*
+* bearbeitet von: Anna-Lisa Merkel, Salma Alkhaiyal
+*/
 
 class PagesController extends Controller
 {
@@ -10,7 +10,7 @@ class PagesController extends Controller
         header('Location: index.php?c=pages&a=index');
     }
 
-	// nothing todo in these actions, they only load static pages
+	// nothing todo in these actions, they only load pages
     public function actionStartpage() {}
 
     public function actionSmoothiemaker() {}
@@ -25,7 +25,6 @@ class PagesController extends Controller
 
 	public function actionSupport() {}
 
-    // TODO: validate Password
 
 	public function actionLogin()
 	{
@@ -45,12 +44,8 @@ class PagesController extends Controller
 		// check user send login field
 		if(isset($_POST['submit_login']))
 		{
-			// TODO: Validate input first
-			// TODO: Check login values with database accounts
-			// TODO: Store useful variables into the session like account and also set loggedIn = true
 			$db = $GLOBALS['db'];
 			
-            // TODO: add namespace
 			$account = accounts::findOne('username = '.$db->quote($username).' AND '.'password = '.$db->quote($password));
 
 			if($account !== null)

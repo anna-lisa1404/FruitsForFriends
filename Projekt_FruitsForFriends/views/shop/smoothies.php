@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <?php include(SHOPPATH.'shopNav.php'); ?>
 
 <div class="products-wrapper">

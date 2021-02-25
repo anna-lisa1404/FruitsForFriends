@@ -1,4 +1,7 @@
 <?php
+/*
+* bearbeitet von: Anna-Lisa Merkel, Salma Alkhaiyal
+*/
 
 // TODO: add namespace again
 // namespace fff\model;
@@ -62,29 +65,7 @@ abstract class Model
             throw new \Exception(`${key} does not exists in this class ${className}`);
         }
     }
-
-    /* 
-    public function __get($key)
-    {
-        // TODO: Check is the key in the schema?
-        //       If so return the value in values if not exists return default value from schema or null
-        // key available?
-        if(isset($this->schema[$key]))
-        {
-            return $this->values[$key];
-        }
-        else
-        {
-            $className = get_called_class();
-            throw new \Exception(`${key} does not exists in this class ${className}`);
-        }
-    }
-
-    public function __destruct()
-    {
-        // TODO: Free memory here
-    }
-    */ 
+    
 
     public static function find($whereStr = '')
     {
@@ -154,12 +135,12 @@ abstract class Model
 
     public function update()
     {
-        // TODO: Implement update
+
     }
 
     public function destroy()
     {
-        // TODO: Implement destroy / delete
+
     }
     
 }

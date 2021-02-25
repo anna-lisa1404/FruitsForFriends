@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Salma Alkhaiyal -->
+
 <div class= "impressum">   
     <h1>Impressum</h1>
         <p> -Fruits for Friends Deutschland GmbH- <br />

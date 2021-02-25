@@ -1,4 +1,7 @@
 <?php
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 define('IMAGEPATH', 'assets'.DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR);
 define('PAGESPATH', 'views'.DIRECTORY_SEPARATOR.'pages'.DIRECTORY_SEPARATOR);

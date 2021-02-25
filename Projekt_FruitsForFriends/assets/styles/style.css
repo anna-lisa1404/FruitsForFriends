@@ -1,3 +1,7 @@
+/*
+* bearbeitet von: Anna-Lisa Merkel, Sarah Schelle, Salma Alkhaiyal
+*/
+
 @font-face {
     src: url(../fonts/Oswald-Bold.ttf);
     font-family: OswaldBold;
@@ -254,7 +258,7 @@ footer a:hover {
 }
 
 .background-picture-login {
-    background-image: url(../images/lots_of_fruits/limette.jpg);
+    background-image: url(../images/ingredient_pictures/limette.jpg);
 }
 
 .error-message {
@@ -326,7 +330,8 @@ footer a:hover {
     color: rgb(213, 84, 72);
 }
 
-.flex-container {
+.flex-container,
+.ingredient-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -363,32 +368,6 @@ footer a:hover {
     font-size: 20px;
     font-weight: bold
 }
-
-
-/* .products-wrapper,
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.product {
-    display: block;
-    overflow: hidden;
-    text-decoration: none;
-    width: 25%;
-    padding: 3%;
-    background-color: white;
-    border: grey solid;
-    border-radius: 5px;
-}
-
-.product-name {
-    padding: 20px 0 2px 0;
-    font-size: 20px;
-} */
 
 .product-details-wrapper {
     margin-top: 2%;
@@ -445,6 +424,17 @@ footer a:hover {
 
 .product-text {
     margin: 5%;
+}
+
+.ingredient {
+    text-align: center;
+}
+
+.ingredient img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: grey solid;
 }
 
 @media screen and (max-width:800px) {
@@ -534,7 +524,7 @@ footer a:hover {
 }
 
 .background-picture-registration {
-    background-image: url(../images/lots_of_fruits/himbeere.jpg);
+    background-image: url(../images/ingredient_pictures/himbeere.jpg);
 }
 
 @media screen and (max-width:600px) {
@@ -618,7 +608,7 @@ footer a:hover {
 /* css of error-page */
 
 .background-picture-error {
-    background-image: url(../images/some_vegetables/chilli.jpg);
+    background-image: url(../images/ingredient_pictures/chilli.jpg);
 }
 
 .background-picture-error h1 {

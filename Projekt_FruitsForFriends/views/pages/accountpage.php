@@ -1,3 +1,5 @@
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <div class="background-picture-accountpage">
     <div class="account-info">
         <div class="random-profile-picture">

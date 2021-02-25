@@ -1,4 +1,7 @@
 <?php
+/*
+* bearbeitet von: Anna-Lisa Merkel
+*/
 
 class Drinks extends Model 
 {

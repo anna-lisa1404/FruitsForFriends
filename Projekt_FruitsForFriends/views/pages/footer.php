@@ -1,4 +1,5 @@
-<!-- footer muss noch erweitert / überarbeitet werden -->
+<!-- bearbeitet von: Anna-Lisa Merkel -->
+
 <div class="footer">
     <footer>
         © 2020-2021 <a href="index.php?c=pages&a=imprint">Impressum</a> Fruits for Friends
