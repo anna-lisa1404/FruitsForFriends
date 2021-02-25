@@ -20,3 +20,4 @@ Es gibt zwei Testuser:
 
 ## Link zum Repository
 https://github.com/anna-lisa1404/FruitsForFriends
+## !!Bilder sind nur über dieses Repository zu finden!! Für die Abgabe waren die Dateien zu groß
