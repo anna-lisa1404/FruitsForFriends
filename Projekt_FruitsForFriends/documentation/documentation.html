@@ -16,6 +16,7 @@
                 Projekt bearbeitet von Sarah Schelle, Salma Alkhaiyal, Anna-Lisa Merkel
             </p>
 
+            <h2>0. Inhaltsverzeichnis</h2>
             <ol class="documentation-contents">
                 <li>Projektbeschreibung</li>
                 <li>Recherche</li>
@@ -24,6 +25,7 @@
                 <li>Funktionalitäten und erstellte Seiten</li>
                 <li>Projekt- und Ordnerstruktur</li>
                 <li>Datenbank</li>
+                <li>Aufgabenverteilung/Aufwand</li>
                 <li>fehlende/unvollständige Funktionalitäten</li>
                 <li>Herausforderungen/Probleme bei der Arbeit</li>
                 <li>verwendete Software</li>
@@ -32,6 +34,9 @@
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
             <h2>1. Projektbeschreibung</h2>
+            <h3>Projektidee</h3>
+            <p>Im Rahmen der Veranstaltung zum Thema Webprogrammierung haben wir uns dazu entschlossen, einen Online-Shop für den Verkauf von Säften und Smoothies aus Zutaten in Bio-Qualität zu erstellen. Säfte und Smoothies aus puren Früchten sind gesund
+                und einfach lecker. Gerade zur aktuellen Pandemiezeit kann jeder ein paar leckere extra-Vitamine gebrauchen, denn sie tun sowohl dem Körper als auch der Seele gut. Darum haben wir uns für dieses Thema entschieden.</p>
 
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
@@ -105,6 +110,22 @@
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
             <h2>4. Design der Seite</h2>
+            <h3>Farben</h3>
+            <p>Bei den verwendeten Farben haben wir uns von Früchten inspirieren lassen: bunte, kräftige aber matte Farben.</p>
+            <p>Beispiele für solche Farben sind hier zu sehen. Verwendet haben wir vordergründig die schwarz eingerahmten Farbtöne.</p>
+            <div class="design-pictures">
+                <img src="../assets/images/documentation_pictures/farben.png" alt="unsere verwendeten Farben">
+            </div>
+            <br>
+            <h3>Schriftart</h3>
+            <p>Auf der gesamten Seite haben wir die Schriftart "Oswald" verwendet, um ihr einen individuellen Look zu verpassen.</p>
+            <br>
+            <h3>Bilder</h3>
+            <p>Die verwendeten Bilder sind ebenso bunt wie die verwendeten Farben und sie unterstützen so das Gesamtbild auf harmonische Weise.</p>
+            <p>Genutzt werden diese Bilder zu Dekorationszwecken und als Produktbilder (oben links), zum Darstellen der Zutaten und für Hintergründe (oben rechts) und für Profilbilder (unten rechts).</p>
+            <div class="design-pictures">
+                <img src="../assets/images/documentation_pictures/beispielbilder.png" alt="Beispiele verwendeter Bilder">
+            </div>
 
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
@@ -175,20 +196,71 @@
                 <img src="../assets/images/documentation_pictures/FruitsForFriendsDB.png" alt="Fruits for Friends Datenbank">
             </div>
             <h3>ingredients</h3>
+            <p>Hier werden die Zutaten der Getränke gespeichert, mit einer Kategorie (Obst, Gemüse, Andere) und der Herkunftsregion (z.B. heimisch, mediterran, exotisch).</p>
             <h3>composition_of_drinks</h3>
+            <p>Dies ist eine Verbindungstabelle zwischen Getränken und ihren Zutaten, welche außerdem die Mengen der Zutaten in Prozent angibt.</p>
             <h3>drinks</h3>
+            <p>Hier werden alle Produkte gespeichert mit dem jeweiligen Preis, der Art (Saft oder Smoothie) und dem vordergründigen Geschmack (z.B süß, sauer, bitter).</p>
             <h3>mixed_smoothies</h3>
+            <p>In dieser Tabelle werden die von den Nutzern gemixten Smoothies gespeichert. Die dazugehörige Funktionalität "Smoothie Maker" konnte im Rahmen dieses Projekts allerdings nicht umgesetzt werden.</p>
             <h3>accounts</h3>
+            <p>Hier werden die Daten aller registrierten Nutzer gespeichert.</p>
             <h3>addresses</h3>
+            <p>Hier werden die Adressen aller registrierten Nutzer gespeichert.</p>
             <h3>orders</h3>
+            <p>In diese Tabelle werden abgeschlossene Bestellungen mit dem Gesamtpreis und dem Bestelldatum gespeichert.</p>
             <h3>orderitems</h3>
+            <p>Dies ist eine Verbindungstabelle zwischen Bestellungen und Produkten, welche auch die Menge des jeweiligen Produks spezifiziert.</p>
 
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
-            <h2>8. fehlende/unvollständige Funktionalitäten</h2>
+            <h2>8. Aufgabenverteilung/Aufwand</h2>
+            <p>Folgende Aufgaben haben die Teammitglieder bearbeitet:</p>
+            <h3>Sarah Schelle</h3>
+            <ul>
+                <li>Mockups (Mobil- und Desktopversion) und Entwürfe für Produktseite, Warenkorb, Footer</li>
+                <li>Logoentwurf</li>
+                <li>Startseite (beinhaltet den Aufbau und die Gestaltung)</li>
+                <li>Supportformular (beinhaltet den Aufbau und die Gestaltung)</li>
+                <li>Über Uns Seite (beinhaltet den Aufbau und die Gestaltung)</li>
+                <li>Smoothie Maker Informations-Seite (beinhaltet den Aufbau und die Gestaltung)</li>
+            </ul>
+            <h3>Salma Alkhaiyal</h3>
+            <ul>
+                <li>Wireframes</li>
+                <li>Registrierungsseite (beinhaltet den Aufbau, die Gestaltung und die Funktionalität)</li>
+                <li>Blogseite (beinhaltet den Aufbau und die Gestaltung)</li>
+                <li>Impressum (beinhaltet den Aufbau und die Gestaltung)</li>
+            </ul>
+            <h3>Anna-Lisa Merkel</h3>
+            <ul>
+                <li>Entwurf und Implementierung der Datenbank</li>
+                <li>Aufbau der Ordner- und Programmstruktur</li>
+                <li>Aufbau des MVC</li>
+                <li>Aufbau des Headers mit der Navigation (normal und responsive)</li>
+                <li>Login Seite (beinhaltet den Aufbau, die Gestaltung und die Funktionalität)</li>
+                <li>Account Seite (beinhaltet den Aufbau, die Gestaltung und die Funktionalität)</li>
+                <li>Shop mit Produktseiten und Detailseite (beinhaltet Aufbau und Gestaltung, Ausgabe der Produkte und Anzeigen der Produkte in der jeweiligen Detailansicht)</li>
+                <li>Aufbau der Error Seite (beinhaltet den Aufbau und die Gestaltung)</li>
+                <li>Anpassung der erstellten Seiten an mobile Ansicht</li>
+                <li>Erstellung der documentation.html</li>
+                <li>Implementierung von Testdatensätzen als sql Skripte</li>
+                <li>"Überwachung und Verwaltung" der Projektdateien</li>
+            </ul>
+            <h3>Gemeinsam</h3>
+            <ul>
+                <li>Überlegen von Testdatensätzen für die Datenbank</li>
+                <li>Zusammenstellung der Dokumentation</li>
+                <li>Präsentationen</li>
+            </ul>
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <hr>
+            <h2>9. fehlende/unvollständige Funktionalitäten</h2>
             <p>Folgende wichtige Funktionalitäten sind leider unvollständig oder fehlen komplett:</p>
             <ul>
                 <li>Registrierung (Seite vorhanden, Funktionalität unvollständig)</li>
+                <li>Umfangreichere Möglichkeiten zur Filterung von Produkten</li>
                 <li>Warenkorb und damit Abschluss des Kaufvorgangs</li>
                 <li>Funktionalitäten mit JavaScript</li>
                 <li>Möglichkeit zur Änderung von Nutzerdaten</li>
@@ -197,11 +269,18 @@
 
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
-            <h2>9. Herausforderungen/Probleme bei der Arbeit</h2>
+            <h2>10. Herausforderungen/Probleme bei der Arbeit</h2>
+            <p>Eine Schwierigkeit bestand darin, sich die Zeit effektiv einzuteilen, welche sowieso viel schneller umging als gedacht. Das führte nicht selten zu Stress und damit verbundenen Flüchtigkeitsfehlern welche natürlich äußerst frustrierend sein
+                können.
+            </p>
+            <p>Weiterhin verlief die Kommunikation nicht immer optimal, wodurch teilweise Unklarheit beim weiteren Vorgehen herrschte und gesetzte Fristen sich verspäteten.</p>
+            <p>Besonders zu Beginn hatten wir noch teils große Schwierigkeiten im Umgang mit html und css, vor allem aber mit php. Im Laufe des Projekts und Semesters konnten diese Schwierigkeiten teilweise recht gut, teilweise aber auch nur ein wenig überwunden
+                werden. Das ist vielleicht auch einer der Gründe für die recht ungleich verteilte Arbeitslast, welche auf die Person, die es letztendlich trifft, auch ganz schön belastend wirken kann.</p>
+            <p>Außerdem behinderten auch eine allgemein gedrückte Stimmung und das ein oder andere Probleme mit einem selber und im privaten ein wenig die Bewältigung des Projekts. In dem Aspekt hatten wir wohl einfach ein wenig Pech.</p>
 
             <!-- --------------------------------------------------------------------------------- -->
             <hr>
-            <h2>10. Verwendete Software</h2>
+            <h2>11. Verwendete Software</h2>
             <p>Folgende Software haben wir für die Arbeit am Projekt genutzt:</p>
             <ul>
                 <li>Programmierumgebung: Visual Studio Code</li>
