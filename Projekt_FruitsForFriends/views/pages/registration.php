@@ -24,16 +24,16 @@
        
                        <div class="form-group">
                            <label for="birthdate"> Geburtsdatum*:</label>
-                           <input type="date" name="birthdate" value="date" />
+                           <input type="date" name="birthdate" />
                        </div>
 
                        <br>
 
                        <div class=" form-group ">
                            <label for="Gender"> Gender*: </label>
-                               <select>
+                               <select name="gender">
                                    <option value="Female" name="gender"> Female </option>
-                                   <option value="Male" name="gender"> Male   </option>
+                                   <option value="Male" name="gender"> Male </option>
                                    <option value="Diverse" name="gender"> Diverse </option>
                                </select>
                        
@@ -50,7 +50,7 @@
 
                        <div class="form-group">
                            <label for="password ">Passwort*:</label>
-                           <input class="form-control " id="Passwort " type="text " name="password " placeholder="Passwort ">
+                           <input class="form-control " id="Passwort " type="text " name="password" placeholder="Passwort ">
                        </div>
 
                        <br>
@@ -64,7 +64,7 @@
 
                        <div class="form-group">
                            <label for="email ">E-Mail*:</label>
-                           <input class="form-control " id="email " type="text " name="email " placeholder="E-Mail ">
+                           <input class="form-control " id="email " type="text " name="email" placeholder="E-Mail ">
                        </div>
 
                        <br>
