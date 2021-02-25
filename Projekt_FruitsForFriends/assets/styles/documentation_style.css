@@ -5,8 +5,18 @@
 }
 
 .file-structure-pictures img {
-    display: inline-block;
     height: 500px;
     width: auto;
     margin: 10px;
+}
+
+.research-pictures img {
+    height: 230px;
+    width: auto;
+    margin: 5px;
+}
+
+.database-picture img {
+    height: 600px;
+    width: auto;
 }
