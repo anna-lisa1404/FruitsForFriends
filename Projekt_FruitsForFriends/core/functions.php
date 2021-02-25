@@ -63,6 +63,7 @@ function loadFilteredProducts($type)
     return $products;
 }
 
+// gets the product information of the selected product
 function loadProductDetails() 
 {
     if(isset($_GET['id']))
@@ -88,6 +89,7 @@ function loadProductDetails()
     }
 }
 
+// gets the ingredients the product is composed of
 function getIngredients() 
 {
     if(isset($_GET['id']))
