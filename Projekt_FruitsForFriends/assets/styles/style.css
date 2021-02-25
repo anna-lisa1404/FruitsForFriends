@@ -697,7 +697,7 @@ footer a:hover {
 
 .scontainer {
     margin: 50px auto;
-    width: 50%;
+    width: 80%;
     padding: 8px
 }
 
@@ -710,8 +710,16 @@ footer a:hover {
     width: 100%;
 }
 
-.startcard {
+.startcard1 {
     float: left;
+    width: 33.33333%;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.startcard2 {
+    float: right;
     width: 33.33333%;
     padding: 20px;
     margin-top: 20px;
