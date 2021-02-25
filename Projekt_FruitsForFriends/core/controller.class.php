@@ -3,9 +3,6 @@
 * bearbeitet von: Anna-Lisa Merkel
 */
 
-// TODO: add namespace again
-// namespace fff\core;
-
 class Controller
 {
     protected $controller = null;

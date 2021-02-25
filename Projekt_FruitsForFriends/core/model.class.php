@@ -3,9 +3,6 @@
 * bearbeitet von: Anna-Lisa Merkel, Salma Alkhaiyal
 */
 
-// TODO: add namespace again
-// namespace fff\model;
-
 abstract class Model
 {
     const TYPE_STRING   = 'string';
@@ -105,7 +102,7 @@ abstract class Model
     
     public function insert()
     {
-        // TODO: Implement insert
+        // Implement insert
         $db = $GLOBALS['db'];
         $tableName = self::tablename();
         $sqlStr = "INSERT INTO `${tableName}` (";

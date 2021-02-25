@@ -7,9 +7,7 @@ class ShopController extends Controller
 {
     public function actionProducts() {}
 
-    public function actionAllproducts() {
-        $products = loadAllProducts();
-    }
+    public function actionAllproducts() {}
 
     public function actionJuices() {}
 

@@ -1,5 +1,5 @@
 --
--- bearbeitet von Anna-Lisa Merkel
+-- bearbeitet von Anna-Lisa Merkel, Sarah Schelle, Salma Alkhaiyal
 --
 
 -- ---------------------
