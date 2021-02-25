@@ -11,6 +11,7 @@
         <span class="price"><?='Preis: '.$product['price'].'€'?></span>
         <div class="product-text">
             <p>Hier ist eine Beschreibung, wie gut dieses Getränk schmeckt. Es ist wirklich sehr lecker! Du musst es unbedingt probieren.</p>
+            <p>Geschmacksrichtung: <?=$product['taste']?></p>
             <br>
 
             <div class="ingredient-display">
@@ -24,9 +25,6 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
-
-            <br>
-            <p>Geschmacksrichtung: <?=$product['taste']?></p>
         </div>
         <form action="index.php?c=shop&a=productdetails&id=<?=$product['id']?>" method="post">
             <label for="quantity">Wie viel dürfen es sein?</label>
