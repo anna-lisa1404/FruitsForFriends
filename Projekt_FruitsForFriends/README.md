@@ -10,6 +10,7 @@ Damit die Webseite voll nutzbar ist, muss die Datenbank (FruitsForFriendsDB.sql)
 1. Testuser.sql
 2. Zutatenliste.sql
 3. Produkte.sql
+
 Beachtet werden sollte außerdem, dass php shorttags aktiviert sind.
 
 ## Testuser
