@@ -17,3 +17,6 @@ Beachtet werden sollte außerdem, dass php shorttags aktiviert sind.
 Es gibt zwei Testuser:
 * testuser (Passwort: '123456789')
 * smoothieLover (Passwort: 'ichmagsmoothies')
+
+## Link zum Repository
+https://github.com/anna-lisa1404/FruitsForFriends
